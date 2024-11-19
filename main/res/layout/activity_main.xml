@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ch.maystre.gilbert.vorodraw.gui.VoronoiPane
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <ch.maystre.gilbert.vorodraw.gui.VoronoiPane
+            android:id="@+id/voronoi_pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ch.maystre.gilbert.vorodraw.gui.SmartTop
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top"/>
+
+            <ImageButton
+                android:layout_below="@id/top"
+                android:id="@+id/help_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/help_button"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:layout_gravity="bottom"/>
+
+            <ImageButton
+                android:id="@+id/restart_button"
+                android:layout_below="@id/help_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/replay_button"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:layout_gravity="bottom"/>
+        </RelativeLayout>
+
+        <ch.maystre.gilbert.vorodraw.gui.HelpPane
+            android:id="@+id/help_pane"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+body{
+  text-align: justify;
+  color: gray;
+  background-color: black;
+}
+
+.inline_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 266;
+  height: 133;
+}
+
+.signature {
+    text-align: right;
+    color: pink;
+    font-size: smaller;
+}
