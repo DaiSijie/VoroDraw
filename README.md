@@ -11,7 +11,4 @@ Most of the fun code is located in the **voronoicomputation** and **coloringcomp
 
 ## Sample Screenshots
 
-<img src="screenshots/screenshot1.jpg" alt="drawing" width="200"/>
-<img src="screenshots/screenshot2.jpg" alt="drawing" width="200"/>
-<img src="screenshots/screenshot3.jpg" alt="drawing" width="200"/>
-<img src="screenshots/screenshot4.jpg" alt="drawing" width="200"/>
+<img src="screenshots/screenshot1.jpg" alt="drawing" width="200"/> <img src="screenshots/screenshot2.jpg" alt="drawing" width="200"/> <img src="screenshots/screenshot3.jpg" alt="drawing" width="200"/> <img src="screenshots/screenshot4.jpg" alt="drawing" width="200"/>
